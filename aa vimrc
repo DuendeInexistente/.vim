@@ -1,0 +1,12 @@
+set wrap
+set linebreak
+filetype on
+set spell
+colorscheme dos
+syntax on
+set spell spelllang=en_us,es
+set guifont=Terminus
+
+set ssop-=options
+set ssop-=folds
+set display+=lastline

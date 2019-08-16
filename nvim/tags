@@ -1,0 +1,12 @@
+DiscordUpdatePresence	pack/literally_why/start/discord.nvim/doc/discord.txt	/*DiscordUpdatePresence*
+discord	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord*
+discord-commands	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord-commands*
+discord-contents	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord-contents*
+discord-interface	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord-interface*
+discord-introduction	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord-introduction*
+discord-variables	pack/literally_why/start/discord.nvim/doc/discord.txt	/*discord-variables*
+g:discord_activate_on_enter	pack/literally_why/start/discord.nvim/doc/discord.txt	/*g:discord_activate_on_enter*
+g:discord_blacklist	pack/literally_why/start/discord.nvim/doc/discord.txt	/*g:discord_blacklist*
+g:discord_clientid	pack/literally_why/start/discord.nvim/doc/discord.txt	/*g:discord_clientid*
+g:discord_log_debug	pack/literally_why/start/discord.nvim/doc/discord.txt	/*g:discord_log_debug*
+g:discord_reconnect_threshold	pack/literally_why/start/discord.nvim/doc/discord.txt	/*g:discord_reconnect_threshold*

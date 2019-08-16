@@ -1,0 +1,6 @@
+fdapm - Bateria
+
+[zg]: Adds to the spellcheck. [z=] :Shows suggestions.
+[v]: Selecciona. [y]: Copia. [d] Borra/Corta
+[ctrl+w-o]: Cierra las otras ventanas.
+[vsp:] Crea un separador vertical
