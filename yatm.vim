@@ -8,10 +8,10 @@ call plug#begin('~/.vim/plugged')
 " Nerdtree
 Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 
-" Gramatical correctness. Load with :Spellers
+" Gramatical correctness. 
 Plug 'ntnn/vim-diction'
 Plug 'reedes/vim-textobj-quote'
-Plug 'reedes/vim-textobj-user'
+Plug 'kana/vim-textobj-user'
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
@@ -41,6 +41,12 @@ Plug 'ryanoasis/vim-devicons'
 " Why do I do this to myself
 "Plug 'aurieh/discord.nvim'
 
+" NVim-Ghost. For text areas
+" Plug 'raghur/vim-ghost', { 'do': ':GhostInstall' }
+"Plug 'falstro/ghost-text-vim'
+Plug 'pandysong/ghost-text.vim'
 
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()

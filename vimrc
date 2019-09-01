@@ -9,7 +9,6 @@ set guifont=Inconsolata\ Medium\ 11
 
 colorscheme fu
 hi CursorLine term=bold cterm=bold 
-set nocursorline
 
 set undofile
 set encoding=utf-8
@@ -26,6 +25,8 @@ set lazyredraw
 set splitright
 
 set cursorline
+set hidden
+	set nocursorline
 
 set ww+=<,>,[,]
 set ssop-=options
