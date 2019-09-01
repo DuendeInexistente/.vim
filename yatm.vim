@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 Plug 'ntnn/vim-diction'
 Plug 'reedes/vim-textobj-quote'
 Plug 'kana/vim-textobj-user'
+Plug 'reedes/vim-litecorrect'
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
@@ -30,6 +31,7 @@ Plug 'zefei/vim-colortuner', { 'on': 'Colortuner' }
 Plug 'flazz/vim-colorschemes'
 Plug 'rainglow/vim'
 Plug 'vim-scripts/fu'
+Plug 'reedes/vim-colors-pencil'
 
 "User interface
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
@@ -37,16 +39,9 @@ Plug 'dbeecham/ctrlp-commandpalette.vim', { 'on': 'CtrlP' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
-" Why do I do this to myself
-"Plug 'aurieh/discord.nvim'
 
-" NVim-Ghost. For text areas
-" Plug 'raghur/vim-ghost', { 'do': ':GhostInstall' }
-"Plug 'falstro/ghost-text-vim'
-Plug 'pandysong/ghost-text.vim'
-
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
 
 call plug#end()
