@@ -65,6 +65,8 @@ map <F2> :emenu <C-Z>
 "Fancy characters
 inoremap ... …
 inoremap -- —
+inoremap --- ---
+inoremap -.-.- ------------------------------
 
 "CtrlPPalette
 map <C-p> :CtrlPCommandPalette

@@ -41,7 +41,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-
-
+Plug 'liuchengxu/vim-which-key'
+Plug 'farmergreg/vim-lastplace'
 
 call plug#end()

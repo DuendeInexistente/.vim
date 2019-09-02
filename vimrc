@@ -5,7 +5,9 @@ set spell
 syntax on
 set spell spelllang=en_us,es
 " set guifont=Consolas\ 13
-set guifont=Inconsolata\ Medium\ 11
+" set guifont=Inconsolata\ Medium\ 11
+set guifont=Anonymice\ Nerd\ Font\ Mono\ 11 
+GuiFont! Anonymice nerd Font mono
 
 colorscheme fu
 hi CursorLine term=bold cterm=bold 
@@ -30,7 +32,7 @@ set hidden
 
 set ww+=<,>,[,]
 set ssop-=options
-set ssop-=folds
+" set ssop-=folds
 set display+=lastline
 set ssop+=resize,winpos,winsize,blank,buffers,curdir,folds,help,options,tabpages
 
