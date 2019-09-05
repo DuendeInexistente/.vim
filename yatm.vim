@@ -60,11 +60,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 
 " CtrlP stuff
-Plug 'ctrlpvim/ctrlp.vim', { 'on': ['CtrlP', 'CntrlPCommandPalette', 'CtrlPMpc', 'CtrlPFunky', 'CtrlPCmdline','CtrlPMenu','CtrlPYankring' ] }
-Plug 'tacahiroy/ctrlp-funky', { 'on': 'CtrlPFunky' }
-Plug 'sgur/ctrlp-extensions.vim', { 'on': ['CtrlPCmdline','CtrlPMenu','CtrlPYankring'] }
-Plug 'dbeecham/ctrlp-commandpalette.vim', { 'on': ['CtrlP', 'CntrlPCommandPalette'] }
-Plug 'lucidstack/ctrlp-mpc.vim', { 'on': 'CtrlPMpc'}
+Plug 'ctrlpvim/ctrlp.vim',                  { 'on': ['CtrlP', 'CntrlPCommandPalette', 'CtrlPMpc', 'CtrlPFunky', 'CtrlPCmdline','CtrlPMenu','CtrlPYankring' ] }
+Plug 'tacahiroy/ctrlp-funky',               { 'on': 'CtrlPFunky' }
+Plug 'sgur/ctrlp-extensions.vim',           { 'on': ['CtrlPCmdline','CtrlPMenu','CtrlPYankring'] }
+Plug 'dbeecham/ctrlp-commandpalette.vim',   { 'on': ['CtrlP', 'CntrlPCommandPalette'] }
+Plug 'lucidstack/ctrlp-mpc.vim',            { 'on': 'CtrlPMpc'}
 let g:ctrlp_mpc_cmd = 'mpc --port 8050'
 
 

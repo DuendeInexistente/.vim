@@ -17,31 +17,38 @@ set spell spelllang=en_us,es
 " set guifont=Inconsolata\ Medium\ 11
 set guifont=Anonymice\ Nerd\ Font\ Mono\ 11 
 
-"colorscheme fu
+colorscheme fu
 "colorscheme Atelier_CaveDark
 "colorscheme challenger_deep
-if strftime("%H") < 7 || strftime("%H") >= 19
-  let themes = [
-    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
-    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
-    \ 'vimspectr150-dark' , 'vimspectr180-dark'  , 'vimspectr210-dark' ,
-    \ 'vimspectr240-dark' , 'vimspectr270-dark'  , 'vimspectr300-dark' ,
-    \ 'vimspectr330-dark' , 'vimspectrgrey-dark'
-    \ ]
-else
-  let themes = [
-    \ 'vimspectr0-light'  , 'vimspectr0-light'   , 'vimspectr30-light' ,
-    \ 'vimspectr60-light' , 'vimspectr90-light'  , 'vimspectr120-light',
-    \ 'vimspectr150-light', 'vimspectr180-light' , 'vimspectr210-light',
-    \ 'vimspectr240-light', 'vimspectr270-light' , 'vimspectr300-light',
-    \ 'vimspectr330-light', 'vimspectrgrey-light'
-    \ ]
-endif
-exe 'colorscheme '.themes[localtime() % len(themes)]
 
-if has('nvim') || has('termguicolors')
-  set termguicolors
+""""""""""""""""""""""""""""""""""""""""""""""""""
+if 0
+	if strftime("%H") < 7 || strftime("%H") >= 19
+	  let themes = [
+	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
+	    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
+	    \ 'vimspectr150-dark' , 'vimspectr180-dark'  , 'vimspectr210-dark' ,
+	    \ 'vimspectr240-dark' , 'vimspectr270-dark'  , 'vimspectr300-dark' ,
+	    \ 'vimspectr330-dark' , 'vimspectrgrey-dark'
+	    \ ]
+	else
+	  let themes = [
+	    \ 'vimspectr0-light'  , 'vimspectr0-light'   , 'vimspectr30-light' ,
+	    \ 'vimspectr60-light' , 'vimspectr90-light'  , 'vimspectr120-light',
+	    \ 'vimspectr150-light', 'vimspectr180-light' , 'vimspectr210-light',
+	    \ 'vimspectr240-light', 'vimspectr270-light' , 'vimspectr300-light',
+	    \ 'vimspectr330-light', 'vimspectrgrey-light'
+	    \ ]
+	endif
+	exe 'colorscheme '.themes[localtime() % len(themes)]
 endif
+""""""""""""""""""""""
+
+
+
+"if has('nvim') || has('termguicolors')
+"  set termguicolors
+"endif
 
 hi CursorLine term=bold cterm=bold 
 
