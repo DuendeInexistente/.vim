@@ -18,8 +18,8 @@ set spell spelllang=en_us,es
 set guifont=Anonymice\ Nerd\ Font\ Mono\ 11 
 
 colorscheme fu
-"colorscheme Atelier_CaveDark
-"colorscheme challenger_deep
+colorscheme Atelier_CaveDark
+colorscheme challenger_deep
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 if 0
