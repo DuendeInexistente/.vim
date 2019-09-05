@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/media/cammera/78AA35BA53845629/Documents/Gits/cirque/LandlyLib'
-let g:netrw_dirhist_2='/media/cammera/78AA35BA53845629/Documents/Gits/cirque'
-let g:netrw_dirhist_3='/media/cammera/78AA35BA53845629/Documents/Gits/cirque/ShortStories'
-let g:netrw_dirhist_4='/media/cammera/78AA35BA53845629/Documents/Gits/cirque'
