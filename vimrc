@@ -53,6 +53,8 @@ endif
 hi CursorLine term=bold cterm=bold 
 
 set undofile
+set undodir=.
+set backupdir=.
 set encoding=utf-8
 
 set showmode

@@ -13,6 +13,7 @@ Plug 'ntnn/vim-diction'
 Plug 'reedes/vim-textobj-quote'
 Plug 'kana/vim-textobj-user'
 Plug 'reedes/vim-litecorrect'
+Plug 'rhysd/vim-grammarous', { 'on': 'GrammarousCheck' }
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
