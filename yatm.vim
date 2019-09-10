@@ -8,12 +8,13 @@ call plug#begin('~/.vim/plugged')
 " Nerdtree
 Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 
-" Gramatical correctness. 
+" Gramatical correctness.
 Plug 'ntnn/vim-diction'
 Plug 'reedes/vim-textobj-quote'
 Plug 'kana/vim-textobj-user'
 Plug 'reedes/vim-litecorrect'
 Plug 'rhysd/vim-grammarous', { 'on': 'GrammarousCheck' }
+Plug 'mboughaba/vim-lessmess'
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
@@ -38,7 +39,7 @@ Plug 'rafalbromirski/vim-aurora'
 Plug 'nightsense/vimspectr'
 
 
-"git? 
+"git?
 Plug 'tpope/vim-fugitive'
 
 
@@ -48,6 +49,8 @@ Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
+Plug 'tyru/restart.vim'
+
 
 """"" Status bars
 Plug 'vim-airline/vim-airline'
