@@ -40,7 +40,7 @@ Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
-
+Plug 'vim-scripts/ScrollColors'
 "Git
 Plug 'tpope/vim-fugitive'
 

@@ -15,7 +15,7 @@ syntax on
 set spell spelllang=en_us,es
 " set guifont=Consolas\ 13
 " set guifont=Inconsolata\ Medium\ 11
-set guifont=Anonymice\ Nerd\ Font\ Mono\ 11 
+set guifont=Anonymice\ Nerd\ Font\ Mono\ 11
 
 colorscheme fu
 colorscheme Atelier_CaveDark
@@ -43,14 +43,22 @@ if 0
 	exe 'colorscheme '.themes[localtime() % len(themes)]
 endif
 """"""""""""""""""""""
-
-
+if 0
+	let themes = [
+	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
+	    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
+	    \ 'vimspectr150-dark' , 'vimspectr180-dark'  , 'vimspectr210-dark' ,
+	    \ 'vimspectr240-dark' , 'vimspectr270-dark'  , 'vimspectr300-dark' ,
+	    \ 'vimspectr330-dark' , 'vimspectrgrey-dark'
+	    \ ]
+	exe 'colorscheme '.themes[localtime() % len(themes)]
+endif
 
 "if has('nvim') || has('termguicolors')
 "  set termguicolors
 "endif
 
-hi CursorLine term=bold cterm=bold 
+hi CursorLine term=bold cterm=bold
 
 set undofile
 set undodir=.
@@ -97,7 +105,7 @@ endfunction
 
 
 """"Airline settings
-let g:airline_powerline_fonts = 1 
+let g:airline_powerline_fonts = 1
 let g:airline_detect_paste = 1
 let g:airline_skip_empty_sections = 1
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
@@ -144,7 +152,7 @@ augroup END
 
 
 "Reduce the 'Press enter to continue!' prompts
-set cmdheight=2 
+set cmdheight=2
 
 "Loading external keybindings and making a command to make them easier to reload independently.
 source ~/.vim/keyboard.vim
@@ -157,4 +165,3 @@ command! FBTerm source ~/.vim/fbterm.vim
 
 " source ~/.vim/airlinelight.vim
 source ~/.vim/ditto.vim
-
