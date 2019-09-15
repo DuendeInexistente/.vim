@@ -15,6 +15,8 @@ Plug 'kana/vim-textobj-user'
 Plug 'reedes/vim-litecorrect'
 Plug 'rhysd/vim-grammarous', { 'on': 'GrammarousCheck' }
 Plug 'mboughaba/vim-lessmess'
+"
+Plug 'sheerun/vim-polyglot'
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
@@ -33,14 +35,16 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'rafalbromirski/vim-aurora'
 Plug 'nightsense/vimspectr'
+Plug 'rakr/vim-two-firewatch'
 
-"""User interface
+""User interface
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'
+
 "Git
 Plug 'tpope/vim-fugitive'
 
@@ -69,7 +73,7 @@ Plug 'lucidstack/ctrlp-mpc.vim',            { 'on': 'CtrlPMpc'}
 """"""""""""Functionality
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'vim-scripts/cbackup.vim'
-	let g:backup_purge=100
+let g:backup_purge=100
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

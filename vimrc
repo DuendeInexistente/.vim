@@ -1,21 +1,17 @@
 "Register yatm
 "DO BEFORE ANYTHING ELSE.
 source ~/.vim/yatm.vim
-
-
-
-
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set wrap
 set linebreak
-filetype on
 set spell
-syntax on
 set spell spelllang=en_us,es
 " set guifont=Consolas\ 13
 " set guifont=Inconsolata\ Medium\ 11
 set guifont=Anonymice\ Nerd\ Font\ Mono\ 11
+filetype on
+syntax on
+
 
 colorscheme fu
 colorscheme Atelier_CaveDark
@@ -57,6 +53,15 @@ endif
 "if has('nvim') || has('termguicolors')
 "  set termguicolors
 "endif
+
+set background=dark " or light if you prefer the light version
+let g:two_firewatch_italics=1
+colo two-firewatch
+
+let g:airline_theme='twofirewatch' " if you have Airline installed and want the associated theme
+
+
+
 
 hi CursorLine term=bold cterm=bold
 
