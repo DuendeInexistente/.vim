@@ -116,6 +116,23 @@ let g:airline_skip_empty_sections = 1
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline_detect_whitespace = 0
 let g:airline_section_warning=' '
+"""""""""""""""""""""""""""
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = ''
+let g:airline_left_sep = '▒░'
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = ''
+let g:airline_right_sep = '░▒'
+let g:airline_right_alt_sep = '|'
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.dirty=⚡
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:EasyClipShareYanks=1
@@ -170,3 +187,32 @@ command! FBTerm source ~/.vim/fbterm.vim
 
 " source ~/.vim/airlinelight.vim
 source ~/.vim/ditto.vim
+
+
+augroup custom_backup
+  autocmd!
+  autocmd BufWritePost * call BackupCurrentFile()
+augroup end
+
+let s:custom_backup_dir='~/.vim_custom_backups'
+function! BackupCurrentFile()
+  if !isdirectory(expand(s:custom_backup_dir))
+    let cmd = 'mkdir -p ' . s:custom_backup_dir . ';'
+    let cmd .= 'cd ' . s:custom_backup_dir . ';'
+    let cmd .= 'git init;'
+    call system(cmd)
+  endif
+  let file = expand('%:p')
+  if file =~ fnamemodify(s:custom_backup_dir, ':t') | return | endif
+  let file_dir = s:custom_backup_dir . expand('%:p:h')
+  let backup_file = s:custom_backup_dir . file
+  let cmd = ''
+  if !isdirectory(expand(file_dir))
+    let cmd .= 'mkdir -p ' . file_dir . ';'
+  endif
+  let cmd .= 'cp ' . file . ' ' . backup_file . ';'
+  let cmd .= 'cd ' . s:custom_backup_dir . ';'
+  let cmd .= 'git add ' . backup_file . ';'
+  let cmd .= 'git commit -m "Backup - `date`";'
+  call jobstart(cmd)
+endfunction
