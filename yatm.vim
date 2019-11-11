@@ -44,9 +44,13 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'
-
 "Git
 Plug 'tpope/vim-fugitive'
+
+""Ebooks
+" Plug 'vim-scripts/Vim-EPUB'
+" Plug 'makerj/vim-pdf'
+
 
 "" Status bars
 Plug 'vim-airline/vim-airline'
@@ -58,7 +62,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Status bar addons
 " Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
-
+Plug 'ap/vim-buftabline'
 
 
 
