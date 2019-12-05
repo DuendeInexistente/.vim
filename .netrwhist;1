@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =0
+=======
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/cammera/.vim'
+let g:netrw_dirhist_2='/home/cammera/.vim/autoload'
+let g:netrw_dirhist_3='/home/cammera/.vim'
+>>>>>>> cbba2cd91f0498c1c7db04fbe49a660d35b33b79

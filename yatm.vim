@@ -49,8 +49,9 @@ Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-fugitive'
 
 ""Ebooks
- Plug 'vim-scripts/Vim-EPUB'
+" Plug 'vim-scripts/Vim-EPUB'
 " Plug 'makerj/vim-pdf'
+
 
 
 "" Status bars
