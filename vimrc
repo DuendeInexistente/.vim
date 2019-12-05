@@ -121,17 +121,33 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_left_sep = ''
+"let g:airline_left_sep = ''
 let g:airline_left_sep = '▒░'
 let g:airline_left_alt_sep = '|'
-let g:airline_right_sep = ''
+"let g:airline_right_sep = ''
 let g:airline_right_sep = '░▒'
 let g:airline_right_alt_sep = '|'
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.dirty=⚡
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = '☰'
+"let g:airline_symbols.maxlinenr = ''
+"let g:airline_symbols.dirty=⚡
+
+
+if $TERM == "linux"
+	:colorscheme fu
+	:AirlineTheme night_owl
+	let g:airline_left_sep = '▒░'
+	let g:airline_left_alt_sep = '|'
+	let g:airline_right_sep = '░▒'
+	let g:airline_right_alt_sep = '|'
+	let g:airline_symbols.branch = '}'
+	let g:airline_symbols.readonly = 'R'
+	let g:airline_symbols.linenr = 'L'
+	let g:airline_symbols.maxlinenr = 'LR'
+	let g:airline_symbols.dirty=*
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -216,3 +232,26 @@ function! BackupCurrentFile()
   let cmd .= 'git commit -m "Backup - `date`";'
   call jobstart(cmd)
 endfunction
+
+
+
+function! s:layout()
+  let buf = nvim_create_buf(v:false, v:true)
+
+  let height = &lines - (float2nr(&lines / 3))
+  let width = float2nr(&columns - (&columns * 2 / 3))
+
+  let opts = {
+        \ 'relative': 'editor',
+        \ 'row': 2,
+        \ 'col': 10,
+        \ 'width': width,
+        \ 'height': height
+        \ }
+
+  call nvim_open_win(buf, v:true, opts)
+endfunction
+let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
+
+
+set termguicolors

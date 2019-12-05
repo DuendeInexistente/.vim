@@ -44,11 +44,12 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'
+Plug 'mcchrish/nnn.vim'
 "Git
 Plug 'tpope/vim-fugitive'
 
 ""Ebooks
-" Plug 'vim-scripts/Vim-EPUB'
+ Plug 'vim-scripts/Vim-EPUB'
 " Plug 'makerj/vim-pdf'
 
 
