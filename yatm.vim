@@ -47,9 +47,6 @@ Plug 'vim-scripts/ScrollColors'
 "Git
 Plug 'tpope/vim-fugitive'
 
-""Ebooks
-" Plug 'vim-scripts/Vim-EPUB'
-" Plug 'makerj/vim-pdf'
 
 
 "" Status bars
