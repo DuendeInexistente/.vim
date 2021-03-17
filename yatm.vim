@@ -39,7 +39,7 @@ Plug 'rakr/vim-two-firewatch'
 Plug 'arzg/vim-colors-xcode'
 
 ""User interface
-Plug 'mhinz/vim-startify'
+"Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
@@ -48,14 +48,14 @@ Plug 'vim-scripts/ScrollColors'
 Plug 'mcchrish/nnn.vim'
 "Git
 Plug 'tpope/vim-fugitive'
-Plug 'skywind3000/vim-quickui'
+"Plug 'skywind3000/vim-quickui'
 
 
 " clear all the menus
-call quickui#menu#reset()
+"call quickui#menu#reset()
 
 " install a 'File' menu, use [text, command] to represent an item.
-call quickui#menu#install('&File', [
+"call quickui#menu#install('&File', [
             \ [ "&New File\tCtrl+n", 'echo 0' ],
             \ [ "&Open File\t(F3)", 'echo 1' ],
             \ [ "&Close", 'echo 2' ],
@@ -68,21 +68,21 @@ call quickui#menu#install('&File', [
             \ ])
 
 " items containing tips, tips will display in the cmdline
-call quickui#menu#install('&Edit', [
+"call quickui#menu#install('&Edit', [
             \ [ '&Copy', 'echo 1', 'help 1' ],
             \ [ '&Paste', 'echo 2', 'help 2' ],
             \ [ '&Find', 'echo 3', 'help 3' ],
             \ ])
 
 " script inside %{...} will be evaluated and expanded in the string
-call quickui#menu#install("&Option", [
+"call quickui#menu#install("&Option", [
 			\ ['Set &Spell %{&spell? "Off":"On"}', 'set spell!'],
 			\ ['Set &Cursor Line %{&cursorline? "Off":"On"}', 'set cursorline!'],
 			\ ['Set &Paste %{&paste? "Off":"On"}', 'set paste!'],
 			\ ])
 
 " register HELP menu with weight 10000
-call quickui#menu#install('H&elp', [
+"call quickui#menu#install('H&elp', [
 			\ ["&Cheatsheet", 'help index', ''],
 			\ ['T&ips', 'help tips', ''],
 			\ ['--',''],
@@ -92,7 +92,7 @@ call quickui#menu#install('H&elp', [
 			\ ], 10000)
 
 " enable to display tips in the cmdline
-let g:quickui_show_tip = 1
+"let g:quickui_show_tip = 1
 
 " hit space twice to open menu
 noremap <space><space> :call quickui#menu#open()<cr>
@@ -127,9 +127,9 @@ Plug 'lucidstack/ctrlp-mpc.vim',            { 'on': 'CtrlPMpc'}
 	let g:ctrlp_mpc_cmd = 'mpc --port 8050'
 
 """"""""""""Functionality
-Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+"Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 
-Ghoststart
+"Ghoststart
 
 Plug 'vim-scripts/cbackup.vim'
 let g:backup_purge=100
@@ -140,6 +140,12 @@ let g:backup_purge=100
 
 
 
+Plug 'romgrk/barbar.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
+
+
+
 " Always has to load last to apply icons to everything else
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
