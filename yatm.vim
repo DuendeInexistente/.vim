@@ -58,7 +58,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'liuchengxu/vim-which-key'
 
-
+Plug 'norcalli/nvim-colorizer.lua'
 
 
 Plug 'skywind3000/vim-quickui'
