@@ -15,9 +15,9 @@ Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 " Gramatical correctness.
 " Plug 'ntnn/vim-diction'
 
- Plug 'reedes/vim-textobj-quote'
- Plug 'kana/vim-textobj-user'
-" Plug 'reedes/vim-litecorrect'
+Plug 'reedes/vim-textobj-quote'
+Plug 'kana/vim-textobj-user'
+Plug 'reedes/vim-litecorrect'
 " Plug 'rhysd/vim-grammarous', { 'on': 'GrammarousCheck' }
 " Plug 'mboughaba/vim-lessmess'
 
