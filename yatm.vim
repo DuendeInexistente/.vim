@@ -3,13 +3,17 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+
+"Lua
+Plug 'davisdude/vim-love-docs', { 'branch': 'build' }
+
 " Make sure you use single quotes
 
 " Nerdtree
 Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 
 " Gramatical correctness.
-Plug 'ntnn/vim-diction'
+" Plug 'ntnn/vim-diction'
 Plug 'reedes/vim-textobj-quote'
 Plug 'kana/vim-textobj-user'
 Plug 'reedes/vim-litecorrect'
