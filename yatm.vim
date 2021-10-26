@@ -56,33 +56,13 @@ Plug 'mcchrish/nnn.vim'
 "Git
 Plug 'tpope/vim-fugitive'
 
-
+Plug 'liuchengxu/vim-which-key'
 
 
 
 
 Plug 'skywind3000/vim-quickui'
-
-
-let g:context_menu_k = [
-        \ ["&Help Keyword\t\\ch", 'echo 100' ],
-        \ ["&Signature\t\\cs", 'echo 101'],
-        \ ['-'],
-        \ ["Find in &File\t\\cx", 'echo 200' ],
-        \ ["Find in &Project\t\\cp", 'echo 300' ],
-        \ ["Find in &Defintion\t\\cd", 'echo 400' ],
-        \ ["Search &References\t\\cr", 'echo 500'],
-        \ ['-'],
-        \ ["&Documentation\t\\cm", 'echo 600'],
-        \ ]
-
-nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
-
-"Press K to use
-
-
-" enable to display tips in the cmdline
-"let g:quickui_show_tip = 1
+source ~/.vim/menus.vim
 
 ""Ebooks
 " Plug 'vim-scripts/Vim-EPUB'

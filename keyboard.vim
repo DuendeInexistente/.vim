@@ -69,4 +69,4 @@ inoremap --- ---
 inoremap -.-.- ------------------------------
 
 "CtrlPPalette
-map <C-p> :CtrlPCommandPalette
+"map <C-p> :CtrlPCommandPalette

@@ -224,4 +224,7 @@ let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
 
 
 set termguicolors
+
+
 source ~/.vim/backups.vim
+source ~/.vim/menus.vim
