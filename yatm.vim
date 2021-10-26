@@ -47,9 +47,9 @@ Plug 'arzg/vim-colors-xcode'
 ""User interface
 
 " Plug 'mhinz/vim-startify'
-"Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
+" Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 " Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-" Plug 'farmergreg/vim-lastplace'
+Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'
 Plug 'mcchrish/nnn.vim'
