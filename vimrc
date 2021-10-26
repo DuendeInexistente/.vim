@@ -83,7 +83,7 @@ set splitright
 
 set cursorline
 set hidden
-set nocursorline
+"set nocursorline
 
 set ww+=<,>,[,]
 set ssop-=options
