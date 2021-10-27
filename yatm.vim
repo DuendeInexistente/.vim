@@ -47,7 +47,7 @@ Plug 'arzg/vim-colors-xcode'
 ""User interface
 
 " Plug 'mhinz/vim-startify'
-" Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
+Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 " Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
@@ -107,6 +107,12 @@ let g:backup_purge=100
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+Plug 'preservim/vim-pencil'
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
 
 
 Plug 'romgrk/barbar.nvim'

@@ -5,8 +5,17 @@ let g:context_menu_k = [
         \ ['-'],
         \ ["&Paste \t\\QV", 'exec feedkeys("QX")' ],
         \ ['-'],
-        \ ['(Use keybinding to'],
+        \ ["&Limelight\tLimelight!!", "Limelight!!"],
+        \ ['-'],
+        \ ["Nnn&picker\tNnnpicker", "Nnnpicker"],
+        \ ["Nnn&explorer\tNnnExplorer", "NnnExplorer"],
+	\ ['-'],
+	\ ["Undo\t\\U", "undo"],
+	\ ["Redo\t\\<C-t>", "redo"],
+	\ ['-'],
+	\ ['(Use keybinding to'],
         \ ['copy selections.)'],
+        \ ['<C- means control.'],
         \ ]
 
 nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
