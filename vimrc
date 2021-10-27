@@ -17,8 +17,8 @@ colorscheme fu
 colorscheme Atelier_CaveDark
 colorscheme challenger_deep
 
-""""""""""""""""""""""""""""""""""""""""""""""""""
-if 0
+	""""""""""""""""""""""""""""""""""""""""""""""""""
+if 1
 	if strftime("%H") < 7 || strftime("%H") >= 19
 	  let themes = [
 	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
@@ -39,7 +39,7 @@ if 0
 	exe 'colorscheme '.themes[localtime() % len(themes)]
 endif
 """"""""""""""""""""""
-if 0
+if 1
 	let themes = [
 	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
 	    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
