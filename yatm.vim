@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " Nerdtree
 Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
+Plug 'dstein64/vim-startuptime'
 
 " Gramatical correctness.
 " Plug 'ntnn/vim-diction'
@@ -19,10 +20,23 @@ Plug 'reedes/vim-textobj-quote'
 Plug 'kana/vim-textobj-user'
 Plug 'reedes/vim-litecorrect'
 " Plug 'rhysd/vim-grammarous', { 'on': 'GrammarousCheck' }
-" Plug 'mboughaba/vim-lessmess'
+Plug 'mboughaba/vim-lessmess'
 
-"
-" Plug 'sheerun/vim-polyglot'
+
+"Syntax files
+Plug 'sheerun/vim-polyglot'
+let g:loadorg = ":lua require(orgmode)"
+Plug 'kristijanhusak/orgmode.nvim', {'do': g:loadorg}
+"autocmd User orgmode.nvim call
+""lua << EOF
+""require('orgmode').setup({
+""  org_agenda_files = {'~/Dropbox/org/*', '~/my-orgs/**/*'},
+""  org_default_notes_file = '~/Dropbox/org/refile.org',
+""})
+""EOF
+
+
+
 
 " Clipboard. Always autoload.
 Plug 'svermeulen/vim-easyclip'
@@ -58,7 +72,8 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'liuchengxu/vim-which-key'
 
-Plug 'norcalli/nvim-colorizer.lua'
+let g:loadcolor = ":lua require'colorizer'.setup()"
+Plug 'norcalli/nvim-colorizer.lua', {'do': g:loadcolor}
 
 
 Plug 'skywind3000/vim-quickui'
@@ -72,7 +87,6 @@ source ~/.vim/menus.vim
 
 "" Status bars
 Plug 'nvim-lualine/lualine.nvim'
-require('lualine').setup()
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'liuchengxu/eleline.vim'
@@ -86,21 +100,11 @@ Plug 'ap/vim-buftabline'
 
 
 
-" CtrlP stuff
-" Plug 'ctrlpvim/ctrlp.vim',                  { 'on': ['CtrlP', 'CntrlPCommandPalette', 'CtrlPMpc', 'CtrlPFunky', 'CtrlPCmdline','CtrlPMenu','CtrlPYankring' ] }
-" Plug 'tacahiroy/ctrlp-funky',               { 'on': 'CtrlPFunky' }
-" Plug 'sgur/ctrlp-extensions.vim',           { 'on': ['CtrlPCmdline','CtrlPMenu','CtrlPYankring'] }
-" Plug 'dbeecham/ctrlp-commandpalette.vim',   { 'on': ['CtrlP', 'CntrlPCommandPalette'] }
-" Plug 'lucidstack/ctrlp-mpc.vim',            { 'on': 'CtrlPMpc'}
-" 	let g:ctrlp_mpc_cmd = 'mpc --port 8050'
 
-""""""""""""Functionality
 
-" Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
-
-" Ghoststart
 
 Plug 'vim-scripts/cbackup.vim'
+
 let g:backup_purge=100
 
 
