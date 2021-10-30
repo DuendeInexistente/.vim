@@ -25,17 +25,20 @@ Plug 'mboughaba/vim-lessmess'
 
 "Syntax files
 Plug 'sheerun/vim-polyglot'
-let g:loadorg = ":lua require(orgmode)"
-Plug 'kristijanhusak/orgmode.nvim', {'do': g:loadorg}
-"autocmd User orgmode.nvim call
-""lua << EOF
-""require('orgmode').setup({
-""  org_agenda_files = {'~/Dropbox/org/*', '~/my-orgs/**/*'},
-""  org_default_notes_file = '~/Dropbox/org/refile.org',
-""})
-""EOF
+"let g:loadorg = ":lua require(orgmode)"
+Plug 'kristijanhusak/orgmode.nvim' ", {'do': g:loadorg}
+"autocmd VimEnter orgmode.nvim call
+"lua << EOF
+"require('orgmode').setup({
+"})
+"EOF
+Plug 'axvr/org.vim'
 
 
+Plug 'milisims/tree-sitter-org'
+" luafile ~/.vim/nvim/treeorg.lua
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+au VimEnter * luafile ~/.vim/nvim/start.lua
 
 
 " Clipboard. Always autoload.

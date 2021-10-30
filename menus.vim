@@ -1,5 +1,5 @@
 "Contect menu. Press K to use.
-let g:context_menu_k = [
+silent! let g:context_menu_k = [
         \ ["Cu&t \t\\QX", 'exec feedkeys("QX")',"Use keybinding to copy selections." ],
         \ ["&Copy \t\\QC", 'exec feedkeys("QC")',"Use keybinding to copy selections."],
         \ ['-'],
@@ -19,10 +19,10 @@ nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})
 
 " enable to display tips in the cmdline
 let g:quickui_show_tip = 1
-call quickui#menu#reset()
+silent! call quickui#menu#reset()
 
 
-call quickui#menu#install("&Config files", [
+silent! call quickui#menu#install("&Config files", [
         \ ["&vimrc", "e ~/.vim/vimrc","Vim config file"],
         \ ["i&nit.nvim","e ~/.vim/nvim/init.vim", "NVim config file"],
 			\ [ "--", ],
@@ -37,4 +37,4 @@ call quickui#menu#install("&Config files", [
 noremap <space><space> :call quickui#menu#open()<cr>
 
 
-echo "Press K for context menu."
+echo "Press K for context menu. Double-tap space for top menu."
