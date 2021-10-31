@@ -31,10 +31,20 @@ silent! call quickui#menu#install("&Config files", [
         \ ["&Plugin file", "e ~/.vim/yatm.vim"],
 			\ ])
 
+silent! call quickui#menu#install("&File Utils", [
+        \ ["&ToC (Markdown)", "QuickTocMarkdown", ":QuickTocMarkdown"],
+	\ ["ToC (Latex)", "QuickTocLatex", ":QuickTocLatex"],
+	\ ["--"],
+	\ ["Colorizer", "ColorizerToggle", ":ColorizerToggle"],
+			\ ])
+
+silent! call quickui#menu#install ("&Markdown", [
+	\ ["Preview\t\\Glow", "Glow", ":Glow"],
+	\ ])
+
 
 
 " hit space twice to open menu
 noremap <space><space> :call quickui#menu#open()<cr>
-
 
 echo "Press K for context menu. Double-tap space for top menu."

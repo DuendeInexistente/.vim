@@ -24,14 +24,24 @@ Plug 'mboughaba/vim-lessmess'
 
 
 "Syntax files
-Plug 'sheerun/vim-polyglot'
-Plug 'kristijanhusak/orgmode.nvim' ", {'do': g:loadorg}
-Plug 'axvr/org.vim'
-
-
+"Plug 'sheerun/vim-polyglot'
 Plug 'milisims/tree-sitter-org'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 au VimEnter * luafile ~/.vim/nvim/start.lua
+
+
+
+Plug 'kristijanhusak/orgmode.nvim' , {'branch': 'tree-sitter'}
+Plug 'axvr/org.vim'
+Plug 'godlygeek/tabular'
+Plug 'ixru/nvim-markdown'
+"let g:vim_markdown_conceal = 0 " Pandoc has better conceal
+
+"Plug 'vim-pandoc/vim-pandoc'
+"Plug 'vim-pandoc/vim-pandoc-syntax'
+
+Plug 'lukas-reineke/headlines.nvim'
+
 
 
 " Clipboard. Always autoload.
@@ -68,8 +78,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'liuchengxu/vim-which-key'
 
-let g:loadcolor = ":lua require'colorizer'.setup()"
-Plug 'norcalli/nvim-colorizer.lua', {'do': g:loadcolor}
+Plug 'norcalli/nvim-colorizer.lua' ", {'do': g:loadcolor}
 
 
 Plug 'skywind3000/vim-quickui'
@@ -93,7 +102,9 @@ Plug 'nvim-lualine/lualine.nvim'
 " Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
+Plug 'sf1/quicktoc-vim'
 
+Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 
 
 
