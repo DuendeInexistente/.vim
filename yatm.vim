@@ -31,7 +31,7 @@ au VimEnter * luafile ~/.vim/nvim/start.lua
 
 
 
-Plug 'kristijanhusak/orgmode.nvim' , {'branch': 'tree-sitter'}
+Plug 'kristijanhusak/orgmode.nvim'
 Plug 'axvr/org.vim'
 Plug 'godlygeek/tabular'
 Plug 'ixru/nvim-markdown'
@@ -41,7 +41,7 @@ Plug 'ixru/nvim-markdown'
 "Plug 'vim-pandoc/vim-pandoc-syntax'
 
 Plug 'lukas-reineke/headlines.nvim'
-
+Plug 'lifepillar/vim-outlaw'
 
 
 " Clipboard. Always autoload.
@@ -68,7 +68,7 @@ Plug 'arzg/vim-colors-xcode'
 
 " Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
-" Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'
@@ -106,6 +106,17 @@ Plug 'sf1/quicktoc-vim'
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 
+Plug 'dkarter/bullets.vim'
+
+" Bullets.vim
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch',
+    \ 'org'
+    \]
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 
 
