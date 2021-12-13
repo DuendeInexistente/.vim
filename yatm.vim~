@@ -25,16 +25,16 @@ Plug 'mboughaba/vim-lessmess'
 
 "Syntax files
 "Plug 'sheerun/vim-polyglot'
-"Plug 'milisims/tree-sitter-org'
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'milisims/tree-sitter-org'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 au VimEnter * luafile ~/.vim/nvim/start.lua
 
 
 
-"Plug 'kristijanhusak/orgmode.nvim' ", {'branch': 'tree-sitter'}
-"Plug 'axvr/org.vim'
+Plug 'kristijanhusak/orgmode.nvim' ", {'branch': 'tree-sitter'}
+Plug 'axvr/org.vim'
 Plug 'godlygeek/tabular'
-"Plug 'ixru/nvim-markdown'
+Plug 'ixru/nvim-markdown'
 "let g:vim_markdown_conceal = 0 " Pandoc has better conceal
 
 "Plug 'vim-pandoc/vim-pandoc'
@@ -68,7 +68,7 @@ Plug 'arzg/vim-colors-xcode'
 
 " Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+" Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
 Plug 'vim-scripts/ScrollColors'

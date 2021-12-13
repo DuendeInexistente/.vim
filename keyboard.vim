@@ -35,7 +35,9 @@ set backspace=indent,eol,start
 "Make JJ act the same as Esc
 imap jj <Esc>
 
-"Move between buffers
+"Prevent question mark spam
+imap ¿¿ <Nop> 
+ "Move between buffers
 noremap <f3> :bprev<CR>
 noremap <f4> :bnext<CR>
 
