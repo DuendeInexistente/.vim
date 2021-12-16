@@ -36,6 +36,7 @@ silent! call quickui#menu#install("&File Utils", [
 	\ ["ToC (Latex)", "QuickTocLatex", ":QuickTocLatex"],
 	\ ["--"],
 	\ ["Colorizer", "ColorizerToggle", ":ColorizerToggle"],
+	\ ["Spellfloat\t\\<,-m-y>", ":call Spellfloat()", ":call Spellfloat"],
 			\ ])
 
 silent! call quickui#menu#install ("&Markdown", [
