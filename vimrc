@@ -105,7 +105,7 @@ set smartcase              " Disable 'ignorecase' if the term contains upper-cas
 let g:buftabs_only_basename=1
 let g:airline_detect_spell=0
 function! AirlineInit()
- let g:airline_section_y = 0
+let g:airline_section_y = 0
 endfunction
 
 

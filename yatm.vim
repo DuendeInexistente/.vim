@@ -104,6 +104,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'sf1/quicktoc-vim'
 
+"Plug 'preservim/tagbar'
+"Plug 'tenfyzhong/tagbar-ext.vim'
+Plug 'aditya-K2/spellfloat'
+
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 
 Plug 'dkarter/bullets.vim'

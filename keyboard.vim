@@ -37,6 +37,7 @@ imap jj <Esc>
 
 "Prevent question mark spam
 imap ¿¿¿¿¿¿ ¿  
+
  "Move between buffers
 noremap <f3> :bprev<CR>
 noremap <f4> :bnext<CR>
@@ -72,3 +73,6 @@ inoremap -.-.- ------------------------------
 
 "CtrlPPalette
 "map <C-p> :CtrlPCommandPalette
+"
+"
+nnoremap <leader>my :call Spellfloat() <CR>
