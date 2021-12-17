@@ -121,7 +121,7 @@ let g:bullets_enabled_file_types = [
     \ 'org'
     \]
 Plug 'lukas-reineke/indent-blankline.nvim'
-
+Plug 'gpanders/vim-oldfiles'
 
 
 

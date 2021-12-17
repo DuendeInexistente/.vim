@@ -21,6 +21,10 @@ nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})
 let g:quickui_show_tip = 1
 silent! call quickui#menu#reset()
 
+silent! call quickui#menu#install("File&system utils", [
+	\ ["File &history", ":Oldfiles", ":Oldfiles"],
+			\ ])
+
 
 silent! call quickui#menu#install("&Config files", [
         \ ["&vimrc", "e ~/.vim/vimrc","Vim config file"],
@@ -32,7 +36,7 @@ silent! call quickui#menu#install("&Config files", [
 			\ ])
 
 silent! call quickui#menu#install("&File Utils", [
-        \ ["&ToC (Markdown)", "QuickTocMarkdown", ":QuickTocMarkdown"],
+        \ ["&ToC (Markdown)", "silent! QuickTocMarkdown", ":QuickTocMarkdown"],
 	\ ["ToC (Latex)", "QuickTocLatex", ":QuickTocLatex"],
 	\ ["--"],
 	\ ["Colorizer", "ColorizerToggle", ":ColorizerToggle"],
