@@ -15,7 +15,7 @@ local function time()
 end
 
 local function temp()
-  return(os.execute("sensors | grep ° | cut -c15-22"))
+  return(os.execute("acpi -t | grep -o [[:digit:]][[:digit:]].[[:digit:]]"))
 end
 
 --  require('lualine').setup{}
@@ -34,7 +34,7 @@ require'lualine'.setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff',
                   {'diagnostics', sources={'nvim_diagnostic', 'coc'}}},
-    lualine_c = {'filename',{time}},
+		  lualine_c = {'filename',{time},{'!acpi -t | grep -o [[:digit:]][[:digit:]].[[:digit:]]'}},
   lualine_x = { 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
