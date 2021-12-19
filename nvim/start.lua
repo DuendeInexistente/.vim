@@ -86,3 +86,11 @@ require("headlines").setup {
         headline_signs = { "Headline1", "Headline2" },
     },
 }
+
+
+
+
+
+--vim.o.background = "dark" -- or "light" for light mode
+--vim.cmd([[colorscheme two-firewatch]])
+--vim.cmd([[colorscheme gruvbox]])

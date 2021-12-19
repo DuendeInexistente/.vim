@@ -122,8 +122,12 @@ let g:bullets_enabled_file_types = [
     \]
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'gpanders/vim-oldfiles'
-
-
+"Autoclose
+augroup oldfiles
+    autocmd!
+    autocmd FileType qf if get(w:, 'quickfix_title') =~# 'Oldfiles' | nnoremap <buffer> <CR> <CR>:cclose<CR> | endif
+augroup END
+"""""""""""
 
 Plug 'vim-scripts/cbackup.vim'
 
@@ -144,6 +148,8 @@ augroup END
 Plug 'romgrk/barbar.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 
+Plug 'rktjmp/lush.nvim'
+Plug 'ellisonleao/gruvbox.nvim'
 
 
 " Always has to load last to apply icons to everything else

@@ -13,51 +13,6 @@ filetype on
 syntax on
 
 
-colorscheme fu
-colorscheme Atelier_CaveDark
-colorscheme challenger_deep
-
-	""""""""""""""""""""""""""""""""""""""""""""""""""
-if 1
-	if strftime("%H") < 7 || strftime("%H") >= 19
-	  let themes = [
-	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
-	    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
-	    \ 'vimspectr150-dark' , 'vimspectr180-dark'  , 'vimspectr210-dark' ,
-	    \ 'vimspectr240-dark' , 'vimspectr270-dark'  , 'vimspectr300-dark' ,
-	    \ 'vimspectr330-dark' , 'vimspectrgrey-dark'
-	    \ ]
-	else
-	  let themes = [
-	    \ 'vimspectr0-light'  , 'vimspectr0-light'   , 'vimspectr30-light' ,
-	    \ 'vimspectr60-light' , 'vimspectr90-light'  , 'vimspectr120-light',
-	    \ 'vimspectr150-light', 'vimspectr180-light' , 'vimspectr210-light',
-	    \ 'vimspectr240-light', 'vimspectr270-light' , 'vimspectr300-light',
-	    \ 'vimspectr330-light', 'vimspectrgrey-light'
-	    \ ]
-	endif
-	exe 'colorscheme '.themes[localtime() % len(themes)]
-endif
-""""""""""""""""""""""
-if 1
-	let themes = [
-	    \ 'vimspectr0-dark'   , 'vimspectr0-dark'    , 'vimspectr30-dark'  ,
-	    \ 'vimspectr60-dark'  , 'vimspectr90-dark'   , 'vimspectr120-dark' ,
-	    \ 'vimspectr150-dark' , 'vimspectr180-dark'  , 'vimspectr210-dark' ,
-	    \ 'vimspectr240-dark' , 'vimspectr270-dark'  , 'vimspectr300-dark' ,
-	    \ 'vimspectr330-dark' , 'vimspectrgrey-dark'
-	    \ ]
-	exe 'colorscheme '.themes[localtime() % len(themes)]
-endif
-
-"if has('nvim') || has('termguicolors')
-"  set termguicolors
-"endif
-
-set background=dark " or light if you prefer the light version
-let g:two_firewatch_italics=1
-colo two-firewatch
-
 let g:airline_theme='twofirewatch' " if you have Airline installed and want the associated theme
 
 
@@ -133,20 +88,6 @@ let g:airline_right_alt_sep = '|'
 "let g:airline_symbols.maxlinenr = ''
 "let g:airline_symbols.dirty=⚡
 
-
-if $TERM == "linux"
-	:colorscheme fu
-	:AirlineTheme night_owl
-	let g:airline_left_sep = '▒░'
-	let g:airline_left_alt_sep = '|'
-	let g:airline_right_sep = '░▒'
-	let g:airline_right_alt_sep = '|'
-	let g:airline_symbols.branch = '}'
-	let g:airline_symbols.readonly = 'R'
-	let g:airline_symbols.linenr = 'L'
-	let g:airline_symbols.maxlinenr = 'LR'
-	let g:airline_symbols.dirty=*
-endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -225,6 +166,6 @@ let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
 
 set termguicolors
 
-
+colorscheme two-firewatch
 source ~/.vim/backups.vim
 source ~/.vim/menus.vim
