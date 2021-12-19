@@ -166,6 +166,8 @@ let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
 
 set termguicolors
 
+colorscheme challenger_deep
 colorscheme two-firewatch
+
 source ~/.vim/backups.vim
 source ~/.vim/menus.vim

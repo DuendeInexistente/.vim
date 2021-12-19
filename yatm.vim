@@ -148,9 +148,9 @@ augroup END
 Plug 'romgrk/barbar.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 
-Plug 'rktjmp/lush.nvim'
-Plug 'ellisonleao/gruvbox.nvim'
-
+"Plug 'rktjmp/lush.nvim'
+"Plug 'ellisonleao/gruvbox.nvim'
+"Plug 'Nequo/vim-allomancer'
 
 " Always has to load last to apply icons to everything else
 Plug 'ryanoasis/vim-devicons'
