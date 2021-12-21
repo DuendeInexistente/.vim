@@ -94,3 +94,6 @@ require("headlines").setup {
 --vim.o.background = "dark" -- or "light" for light mode
 --vim.cmd([[colorscheme two-firewatch]])
 --vim.cmd([[colorscheme gruvbox]])
+
+
+

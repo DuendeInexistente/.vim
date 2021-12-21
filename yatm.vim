@@ -104,9 +104,34 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'sf1/quicktoc-vim'
 
-"Plug 'preservim/tagbar'
+Plug 'preservim/tagbar'
+"Plug 'majutsushi/tagbar'
+"Plug 'lvht/tagbar-markdown'
 "Plug 'tenfyzhong/tagbar-ext.vim'
+Plug 'jszakmeister/markdown2ctags'
+""""""""""""""""""""""""""""""""""""""""""""""
+let g:tagbar_ctags_bin="/home/linuxbrew/.linuxbrew/Cellar/universal-ctags/p5.9.20211219.0/bin/ctags"
+" Add support for markdown files in tagbar.
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : '~/.vim/plugged/markdown2ctags/markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
+""""""""""""""""""""""""""""""""""""""""""""""
+
+
 Plug 'aditya-K2/spellfloat'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'karb94/neoscroll.nvim'
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 

@@ -76,3 +76,7 @@ inoremap -.-.- ------------------------------
 "
 "
 nnoremap <leader>my :call Spellfloat() <CR>
+
+
+nmap <F8> :TagbarToggle<CR>
+
