@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/cammera/.vim'
 let g:netrw_dirhist_2='/home/cammera/.vim/autoload'
 let g:netrw_dirhist_3='/home/cammera/.vim'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/media/cammera/Datos/Descargas/Gits/BackupEscritos/2021'
 let g:netrw_dirhist_5='/home/cammera/.vim/spell'
 let g:netrw_dirhist_6='/home/cammera/.vim/spell/check'
 let g:netrw_dirhist_7='/home/cammera/Documents/BackupEscritos/2021'
+let g:netrw_dirhist_8='/home/cammera/.vim/plugged/tagbar'

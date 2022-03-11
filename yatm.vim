@@ -26,7 +26,7 @@ Plug 'mboughaba/vim-lessmess'
 "Syntax files
 "Plug 'sheerun/vim-polyglot'
 "Plug 'milisims/tree-sitter-org'
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 au VimEnter * luafile ~/.vim/nvim/start.lua
 
 
@@ -159,14 +159,19 @@ Plug 'vim-scripts/cbackup.vim'
 let g:backup_purge=100
 
 
+Plug 'folke/which-key.nvim'
+
+
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 Plug 'preservim/vim-pencil'
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
+  autocmd FileType markdown,mkd call pencil#init({'wrap':'soft'})
+  autocmd FileType text         call pencil#init({'wrap':'soft'})
 augroup END
 
 

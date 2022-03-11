@@ -23,6 +23,7 @@ silent! call quickui#menu#reset()
 
 silent! call quickui#menu#install("File&system utils", [
 	\ ["File &history", ":Oldfiles", ":Oldfiles"],
+	\ ["File finder\t\\,f",":LeaderfFile",":LeaderfFile"]
 			\ ])
 
 
@@ -36,11 +37,12 @@ silent! call quickui#menu#install("&Config files", [
 			\ ])
 
 silent! call quickui#menu#install("&File Utils", [
+	\ ["T&agbar\t\\F8","TagbarToggle",":TagbarToggle"],
         \ ["&ToC (Markdown)", "silent! QuickTocMarkdown", ":QuickTocMarkdown"],
 	\ ["ToC (Latex)", "QuickTocLatex", ":QuickTocLatex"],
 	\ ["--"],
 	\ ["Colorizer", "ColorizerToggle", ":ColorizerToggle"],
-	\ ["Spellfloat\t\\<,-m-y>", ":call Spellfloat()", ":call Spellfloat"],
+	\ ["Spellfloat\t\\<,-m-y>", ":call Spellfloat()", ":call Spellfloat"]
 			\ ])
 
 silent! call quickui#menu#install ("&Markdown", [
