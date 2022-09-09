@@ -133,6 +133,41 @@ Plug 'aditya-K2/spellfloat'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'karb94/neoscroll.nvim'
 
+
+""""""""""""""""""""""""
+Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
+vnoremap c :MakeCommentVisual<cr>
+nnoremap yc :MakeCommentNormal<cr>
+nnoremap <leader>dc :DeleteComment<cr>
+nnoremap K :GetComment<cr>
+nnoremap <leader>ec :EditComment<cr>
+""""""""""""""""""""""""
+
+""""""""""""""""""""""""
+Plug 'Pocco81/true-zen.nvim'
+"""""""""""""""""""""""
+
+"""""""""""""""""""""""
+" Vim Script
+Plug 'folke/twilight.nvim'
+
+
+"""""""""""""""""""""""
+
+Plug 'stevearc/dressing.nvim'
+
+Plug 'rcarriga/nvim-notify'
+
+Plug 'windwp/nvim-autopairs'
+
+Plug 'petertriho/nvim-scrollbar'
+
+Plug 'kevinhwang91/nvim-hlslens'
+
+
+
+
+
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 
 Plug 'dkarter/bullets.vim'
@@ -161,7 +196,7 @@ let g:backup_purge=100
 
 Plug 'folke/which-key.nvim'
 
-
+Plug 'huiscool/vim-wpm'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -145,6 +145,7 @@ command! FBTerm source ~/.vim/fbterm.vim
 " source ~/.vim/airlinelight.vim
 source ~/.vim/ditto.vim
 
+
 function! s:layout()
   let buf = nvim_create_buf(v:false, v:true)
 
