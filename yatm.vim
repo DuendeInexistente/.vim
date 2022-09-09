@@ -68,6 +68,9 @@ Plug 'arzg/vim-colors-xcode'
 
 " Plug 'mhinz/vim-startify'
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
+let g:limelight_paragraph_span = 1
+
+
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'farmergreg/vim-lastplace'
 Plug 'tyru/restart.vim'
@@ -164,8 +167,24 @@ Plug 'petertriho/nvim-scrollbar'
 
 Plug 'kevinhwang91/nvim-hlslens'
 
+Plug 'EdenEast/nightfox.nvim'
 
+Plug 'jesson/vim-daylight'
 
+let g:daylight_morning_color_gvim = "dawnfox"
+let g:daylight_afternoon_color_gvim = "dayfox"
+let g:daylight_evening_color_gvim = "duskfox"
+let g:daylight_late_color_gvim = "nightfox"
+
+let g:daylight_morning_color_term = "dawnfox"
+let g:daylight_afternoon_color_term = "dayfox"
+let g:daylight_evening_color_term = "duskfox"
+let g:daylight_late_color_term = "nightfox"
+
+let g:daylight_late_hour = 21
+let g:daylight_morning_hour = 6
+let g:daylight_afternoon_hour = 12
+let g:daylight_evening_hour = 17
 
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}

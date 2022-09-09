@@ -185,7 +185,8 @@ endif
 
 """""""""""""""""""""""""
 let g:two_firewatch_italics=1
-colorscheme two-firewatch
+" colorscheme two-firewatch
+" colorscheme duskfox
 
 source ~/.vim/backups.vim
 source ~/.vim/menus.vim
