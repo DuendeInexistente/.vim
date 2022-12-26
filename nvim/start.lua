@@ -68,6 +68,9 @@ require("scrollbar").setup()
 require("scrollbar.handlers.search").setup()
 
 
+require("custom-theme").setup()
+
+
 require("headlines").setup()
 
 
@@ -130,3 +133,7 @@ require("headlines").setup {
 --vim.o.background = "dark" -- or "light" for light mode
 --vim.cmd([[colorscheme two-firewatch]])
 --vim.cmd([[colorscheme gruvbox]])
+
+
+
+--require("noice").setup()

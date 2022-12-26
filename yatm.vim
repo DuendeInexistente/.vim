@@ -84,9 +84,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'norcalli/nvim-colorizer.lua' ", {'do': g:loadcolor}
 
 
-Plug 'skywind3000/vim-quickui'
-source ~/.vim/menus.vim
-
 ""Ebooks
 " Plug 'vim-scripts/Vim-EPUB'
 " Plug 'makerj/vim-pdf'
@@ -186,6 +183,32 @@ let g:daylight_morning_hour = 6
 let g:daylight_afternoon_hour = 12
 let g:daylight_evening_hour = 17
 
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'Djancyp/custom-theme.nvim'
+
+Plug 'skywind3000/vim-quickui'
+source ~/.vim/menus.vim
+
+
+
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+function! s:SetupGhostBuffer()
+    set ft=markdown
+endfunction
+
+augroup vim-ghost
+    au!
+    au User vim-ghost#connected call s:SetupGhostBuffer()
+augroup END
+
+
+if has('python3') && has('timers')
+  Plug 'danth/pathfinder.vim'
+else
+  echoerr 'pathfinder.vim is not supported on this Vim installation'
+endif
+
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
 
@@ -231,6 +254,23 @@ augroup END
 
 Plug 'romgrk/barbar.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
+
+
+
+Plug 'rubixninja314/vim-mcfunction'
+
+
+
+
+
+
+
+Plug 'MunifTanjim/nui.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'folke/noice.nvim'
+	Plug 'gmarmstrong/vim-muse'
+
+
 
 "Plug 'rktjmp/lush.nvim'
 "Plug 'ellisonleao/gruvbox.nvim'

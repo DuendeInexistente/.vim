@@ -1,3 +1,10 @@
+hi! QuickBG ctermfg=0 ctermbg=7 guifg=black guibg=gray
+hi! QuickSel cterm=bold ctermfg=0 ctermbg=2 gui=bold guibg=brown guifg=gray
+hi! QuickKey term=bold ctermfg=9 gui=bold guifg=#f92772
+hi! QuickOff ctermfg=59 guifg=#75715e
+hi! QuickHelp ctermfg=247 guifg=#959173
+
+
 "Contect menu. Press K to use.
 silent! let g:context_menu_k = [
         \ ["Cu&t \t\\QX", 'exec feedkeys("QX")',"Use keybinding to copy selections." ],
@@ -14,8 +21,6 @@ silent! let g:context_menu_k = [
 	\ ["Redo\t\\<C-t>", "redo","<C- means control."],
 	\ ["Undo Tree", "UndotreeToggle",":UndotreeToggle"],
         \ ]
-
-nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
 
 " enable to display tips in the cmdline
 let g:quickui_show_tip = 1
@@ -53,5 +58,7 @@ silent! call quickui#menu#install ("&Markdown", [
 
 " hit space twice to open menu
 noremap <space><space> :call quickui#menu#open()<cr>
+nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
+
 
 echo "Press K for context menu. Double-tap space for top menu."
