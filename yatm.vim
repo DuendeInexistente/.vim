@@ -264,7 +264,11 @@ Plug 'PatrBal/vim-textidote'
 let g:textidote_jar = '~/textidote.jar'
 let g:textidote_lang = 'es'
 
+let g:textidote_ignore_rules = 'sh:d:008'
+let g:textidote_dictionary = &spellfile
 
+
+Plug 'micarmst/vim-spellsync'
 
 Plug 'MunifTanjim/nui.nvim'
 Plug 'hrsh7th/nvim-cmp'
