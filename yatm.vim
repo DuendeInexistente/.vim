@@ -260,15 +260,16 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'rubixninja314/vim-mcfunction'
 
 
-
-
+Plug 'PatrBal/vim-textidote'
+let g:textidote_jar = '~/textidote.jar'
+let g:textidote_lang = 'es'
 
 
 
 Plug 'MunifTanjim/nui.nvim'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'folke/noice.nvim'
-	Plug 'gmarmstrong/vim-muse'
+Plug 'gmarmstrong/vim-muse'
 
 
 
