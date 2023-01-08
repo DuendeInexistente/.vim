@@ -53,3 +53,7 @@ require'lualine'.setup {
 
 EOF
 endfunction
+
+
+
+

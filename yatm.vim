@@ -160,7 +160,7 @@ Plug 'rcarriga/nvim-notify'
 
 Plug 'windwp/nvim-autopairs'
 
-Plug 'petertriho/nvim-scrollbar'
+"Plug 'petertriho/nvim-scrollbar'
 
 Plug 'kevinhwang91/nvim-hlslens'
 

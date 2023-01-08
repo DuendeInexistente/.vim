@@ -188,6 +188,11 @@ let g:two_firewatch_italics=1
 " colorscheme two-firewatch
 " colorscheme duskfox
 
+
 source ~/.vim/backups.vim
 source ~/.vim/menus.vim
 
+
+silent autocmd VimEnter * nested
+			\  if !argc() && line2byte('$') == -1
+			\ | Oldfiles
