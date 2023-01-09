@@ -30,7 +30,6 @@ Plug 'mboughaba/vim-lessmess'
 "Plug 'sheerun/vim-polyglot'
 "Plug 'milisims/tree-sitter-org'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-au VimEnter * luafile ~/.vim/nvim/start.lua
 
 
 
@@ -287,4 +286,7 @@ Plug 'gmarmstrong/vim-muse'
 " Always has to load last to apply icons to everything else
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
+
+au VimEnter * luafile ~/.vim/nvim/start.lua
+
 call plug#end()
