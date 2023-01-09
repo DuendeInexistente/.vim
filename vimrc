@@ -193,6 +193,6 @@ source ~/.vim/backups.vim
 source ~/.vim/menus.vim
 
 
-silent autocmd VimEnter * nested
+silent autocmd UIEnter * nested
 			\  if !argc() && line2byte('$') == -1
-			\ | Oldfiles
+			\ | bro oldfiles

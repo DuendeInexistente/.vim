@@ -136,14 +136,7 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'karb94/neoscroll.nvim'
 
 
-""""""""""""""""""""""""
-Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
-vnoremap c :MakeCommentVisual<cr>
-nnoremap yc :MakeCommentNormal<cr>
-nnoremap <leader>dc :DeleteComment<cr>
-nnoremap K :GetComment<cr>
-nnoremap <leader>ec :EditComment<cr>
-""""""""""""""""""""""""
+
 
 """"""""""""""""""""""""
 Plug 'Pocco81/true-zen.nvim'
@@ -242,6 +235,15 @@ Plug 'folke/which-key.nvim'
 
 Plug 'huiscool/vim-wpm'
 
+""""""""""""""""""""""""
+Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
+vnoremap c :MakeCommentVisual<cr>
+nnoremap yc :MakeCommentNormal<cr>
+nnoremap <leader>dc :DeleteComment<cr>
+nnoremap K :GetComment<cr>
+nnoremap <leader>ec :EditComment<cr>
+let g:DocCommentsEchoComment = 1
+""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
