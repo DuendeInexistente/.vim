@@ -1,3 +1,4 @@
+require('impatient')
 --require('orgmode')
 
 --require('orgmode').setup({})
@@ -64,8 +65,6 @@ plugins = {
 require("nvim-autopairs").setup {}
 require('nvim-autopairs').remove_rule('"')
 
-require("scrollbar").setup()
-require("scrollbar.handlers.search").setup()
 
 
 require("custom-theme").setup()

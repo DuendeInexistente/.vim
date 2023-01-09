@@ -3,6 +3,9 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+Plug 'lewis6991/impatient.nvim'
+
+
 
 "Lua
 " Plug 'davisdude/vim-love-docs', { 'branch': 'build' }
