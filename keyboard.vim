@@ -36,7 +36,9 @@ set backspace=indent,eol,start
 imap jj <Esc>
 
 "Prevent question mark spam
-imap ¿¿¿¿¿¿ ¿
+"imap ¿¿¿¿¿¿ ¿
+imap nyn ñ
+imap NYN Ñ
 
  "Move between buffers
 noremap <f3> :bprev<CR>

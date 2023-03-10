@@ -236,13 +236,14 @@ Plug 'folke/which-key.nvim'
 Plug 'huiscool/vim-wpm'
 
 """"""""""""""""""""""""
+let g:DocCommentsEchoComment = 1
 Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
 vnoremap c :MakeCommentVisual<cr>
 nnoremap yc :MakeCommentNormal<cr>
 nnoremap <leader>dc :DeleteComment<cr>
 nnoremap K :GetComment<cr>
 nnoremap <leader>ec :EditComment<cr>
-let g:DocCommentsEchoComment = 1
+
 """"""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -268,7 +269,7 @@ Plug 'PatrBal/vim-textidote'
 let g:textidote_jar = '~/textidote.jar'
 let g:textidote_lang = 'es'
 
-let g:textidote_ignore_rules = 'sh:d:008,lt:es:VOSEO'
+let g:textidote_ignore_rules = 'sh:d:008,lt:es:VOSEO,lt:en:PROFANITY'
 let g:textidote_dictionary = &spellfile
 
 
@@ -292,3 +293,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 au VimEnter * luafile ~/.vim/nvim/start.lua
 
 call plug#end()
+
+
+

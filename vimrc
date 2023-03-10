@@ -196,3 +196,8 @@ source ~/.vim/menus.vim
 silent autocmd UIEnter * nested
 			\  if !argc() && line2byte('$') == -1
 			\ | bro oldfiles
+			
+	
+			
+			
+
