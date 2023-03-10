@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/cammera/Arte/BackupEscritos/2022'
+let g:netrw_dirhist_2='/storage/emulated/0/Documents/backupescritos/2023'
+let g:netrw_dirhist_3='/storage/emulated/0/Documents/backupescritos'
+let g:netrw_dirhist_4='/storage/emulated/0/Documents/backupescritos/2023'
+let g:netrw_dirhist_5='/storage/emulated/0/Documents/backupescritos/2023/reves'
