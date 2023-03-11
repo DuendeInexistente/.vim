@@ -30,7 +30,7 @@ require("impatient")
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "markdown","markdown_inline" },
+  ensure_installed = { "c", "lua", "markdown","markdown_inline","norg","org" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = true,
