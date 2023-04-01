@@ -95,9 +95,9 @@ plugins = {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
   }
-  
-  
-  
+
+
+
 
    require("true-zen").setup {
 		-- your config goes here
@@ -294,3 +294,12 @@ vim.api.nvim_set_keymap('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]]
 
 vim.api.nvim_set_keymap('n', '<Leader>l', '<Cmd>noh<CR>', kopts)
 
+
+
+require('nightfox').setup({
+ palettes = {
+	 nightfox = { red = { base = "#ffffff", bright = "#ffffff", dim = "#ffffff" }},
+	 duskfox = { red = { base = "#ffffff", bright = "#ffffff", dim = "#ffffff" }},
+	 dayfox = { red = { base = "#000000", bright = "#000000", dim = "#000000" }},
+	 dawnfox = { red = { base = "#000000", bright = "#000000", dim = "#000000" }}
+}})
