@@ -34,9 +34,8 @@ set backspace=indent,eol,start
 
 "Make JJ act the same as Esc
 imap jj <Esc>
-
-"Prevent question mark spam
-"imap ¿¿¿¿¿¿ ¿
+imap !! ¡
+imap ?? ¿
 imap nyn ñ
 imap NYN Ñ
 
@@ -81,4 +80,3 @@ nnoremap <leader>my :call Spellfloat() <CR>
 
 
 nmap <F8> :TagbarToggle<CR>
-
