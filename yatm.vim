@@ -206,9 +206,6 @@ endif
 
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
-lua << EOF
-require('glow').setup()
-EOF
 
 
 Plug 'dkarter/bullets.vim'
