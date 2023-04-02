@@ -206,6 +206,10 @@ endif
 
 
 Plug 'ellisonleao/glow.nvim', {'do' : 'GlowInstall'}
+lua << EOF
+require('glow').setup()
+EOF
+
 
 Plug 'dkarter/bullets.vim'
 
@@ -293,6 +297,3 @@ Plug 'kyazdani42/nvim-web-devicons'
 au VimEnter * luafile ~/.vim/nvim/start.lua
 
 call plug#end()
-
-
-
