@@ -282,6 +282,8 @@ Plug 'folke/noice.nvim'
 Plug 'gmarmstrong/vim-muse'
 
 
+Plug 'brenopacheco/vim-hydra'
+Plug 'gyim/vim-boxdraw'
 
 "Plug 'rktjmp/lush.nvim'
 "Plug 'ellisonleao/gruvbox.nvim'
@@ -294,3 +296,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 au VimEnter * luafile ~/.vim/nvim/start.lua
 
 call plug#end()
+
+
+
+source ~/.vim/hydrafile.vim
