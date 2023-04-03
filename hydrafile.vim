@@ -85,9 +85,9 @@ let s:square_hydra =
             \     {
             \       'name': 'Settings',
             \       'keys': [
-	    \         ['o', 'set virtualedit+=all', 'enable-virtual edit'],
-	    \         ['p', 'set virtualedit-=all', 'disable-virtual edit'],
-            \         ['i', 'norm \<C-v>', 'CTRL+V=Visual-block'],
+	    \         ['j', 'set virtualedit+=all', 'enable-virtual edit'],
+	    \         ['k', 'set virtualedit-=all', 'disable-virtual edit'],
+            \         ['l', 'norm \<C-v>', 'CTRL+V=Visual-block'],
             \       ]
             \     },
             \     {
@@ -97,8 +97,17 @@ let s:square_hydra =
             \         ['x', "norm +O", 'Labeled'],
             \         ['c', 'norm +c','Fill with label'],
             \       ]
+            \     },
+            \     {
+            \       'name': 'Lines',
+            \       'keys': [
+            \         ['s', "norm +>", ' V-H>'],
+            \         ['w', "norm ++>", '<V-H>'],
+            \         ['d', "norm +^", ' H-V^'],
+            \         ['e', "norm ++^", '^H-V^'],
+            \       ]
             \     }
-            \   ]
+	    \   ]
             \ }
 
 silent call hydra#hydras#register(s:square_hydra)
