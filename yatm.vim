@@ -300,3 +300,8 @@ call plug#end()
 
 
 source ~/.vim/hydrafile.vim
+
+
+silent autocmd UIEnter * nested
+			\  if !argc() && line2byte('$') == -1
+			\ | bro Oldfiles
