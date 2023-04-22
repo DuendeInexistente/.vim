@@ -36,11 +36,15 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 "Plug 'kristijanhusak/orgmode.nvim' ", {'branch': 'tree-sitter'}
 "Plug 'axvr/org.vim'
 Plug 'godlygeek/tabular'
-"Plug 'ixru/nvim-markdown'
+Plug 'ixru/nvim-markdown'
 "let g:vim_markdown_conceal = 0 " Pandoc has better conceal
 
 "Plug 'vim-pandoc/vim-pandoc'
 "Plug 'vim-pandoc/vim-pandoc-syntax'
+
+Plug 'rhysd/vim-gfm-syntax'
+let g:gfm_syntax_emoji_conceal = 1
+"Plug 'prurigro/vim-markdown-concealed'
 
 Plug 'lukas-reineke/headlines.nvim'
 Plug 'lifepillar/vim-outlaw'

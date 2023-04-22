@@ -61,4 +61,4 @@ noremap <space><space> :call quickui#menu#open()<cr>
 nnoremap <silent>K :call quickui#tools#clever_context('k', g:context_menu_k, {})<cr>
 
 
-echo "Press K for context menu. Double-tap space for top menu."
+"echo "Press K for context menu. Double-tap space for top menu."
