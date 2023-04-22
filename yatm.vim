@@ -241,8 +241,7 @@ Plug 'folke/which-key.nvim'
 Plug 'huiscool/vim-wpm'
 
 """"""""""""""""""""""""
-let g:DocCommentsEchoComment = 1
-Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
+silent! Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
 vnoremap c :MakeCommentVisual<cr>
 nnoremap yc :MakeCommentNormal<cr>
 nnoremap <leader>dc :DeleteComment<cr>
@@ -284,7 +283,7 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'folke/noice.nvim'
 Plug 'gmarmstrong/vim-muse'
-
+Plug 'rcarriga/nvim-notify'
 
 Plug 'brenopacheco/vim-hydra'
 Plug 'gyim/vim-boxdraw'
@@ -297,15 +296,17 @@ Plug 'gyim/vim-boxdraw'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 
-au VimEnter * luafile ~/.vim/nvim/start.lua
 
 call plug#end()
 
 
+au VimEnter * luafile ~/.vim/nvim/start.lua
+let g:DocCommentsEchoComment = 1
+
 
 source ~/.vim/hydrafile.vim
 
-
+set nolz
 silent autocmd UIEnter * nested
 			\  if !argc() && line2byte('$') == -1
 			\ | bro Oldfiles

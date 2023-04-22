@@ -32,7 +32,7 @@ set incsearch
 set hlsearch
 
 set ttyfast
-set lazyredraw
+"set lazyredraw
 
 set splitright
 
