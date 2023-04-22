@@ -77,7 +77,7 @@ let s:square_hydra =
             \ {
             \   'name':        'square',
             \   'title':       'Flowchart Mode',
-            \   'show':        'popup',
+            \   'show':        'split',
             \   'exit_key':    "q",
             \   'feed_key':    v:true,
             \   'foreign_key': v:true,
