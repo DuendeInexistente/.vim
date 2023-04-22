@@ -302,11 +302,11 @@ call plug#end()
 
 au VimEnter * luafile ~/.vim/nvim/start.lua
 let g:DocCommentsEchoComment = 1
-
+"set lazyredraw
 
 source ~/.vim/hydrafile.vim
 
-set nolz
+"set nolz
 silent autocmd UIEnter * nested
 			\  if !argc() && line2byte('$') == -1
 			\ | bro Oldfiles
