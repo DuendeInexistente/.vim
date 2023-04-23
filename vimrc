@@ -143,7 +143,7 @@ command! FBTerm source ~/.vim/fbterm.vim
 
 
 " source ~/.vim/airlinelight.vim
-source ~/.vim/ditto.vim
+" source ~/.vim/ditto.vim
 
 
 function! s:layout()
