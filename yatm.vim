@@ -184,6 +184,8 @@ let g:daylight_evening_hour = 17
 
 Plug 'nvim-lua/plenary.nvim'
 
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+
 Plug 'Djancyp/custom-theme.nvim'
 
 Plug 'skywind3000/vim-quickui'
