@@ -6,3 +6,9 @@ GuiFont! CodeNewRoman NF:h13
 GuiTabline 0
 "GuiFont! OMW\ Ayembedt:h14
 "GuiFont! Pelagiad:h14
+"
+"
+GuiPopupmenu 0
+"GuiRenderLigatures 1
+
+GuiFont FiraCode\ Nerd\ Font:h12

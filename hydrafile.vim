@@ -46,7 +46,7 @@ let s:spellcheck_hydra =
             \ {
             \   'name':        'spellcheck',
             \   'title':       'Spellchecking Mode',
-            \   'show':        'popup',
+            \   'show':        'split',
             \   'exit_key':    "q",
             \   'feed_key':    v:true,
             \   'foreign_key': v:true,

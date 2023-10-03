@@ -287,8 +287,12 @@ Plug 'folke/noice.nvim'
 Plug 'gmarmstrong/vim-muse'
 Plug 'rcarriga/nvim-notify'
 
-Plug 'brenopacheco/vim-hydra'
+"Plug 'brenopacheco/vim-hydra'
 Plug 'gyim/vim-boxdraw'
+
+Plug 'stevearc/dressing.nvim'
+Plug 'ziontee113/icon-picker.nvim'
+
 
 "Plug 'rktjmp/lush.nvim'
 "Plug 'ellisonleao/gruvbox.nvim'
@@ -306,7 +310,7 @@ au VimEnter * luafile ~/.vim/nvim/start.lua
 let g:DocCommentsEchoComment = 1
 "set lazyredraw
 
-source ~/.vim/hydrafile.vim
+"source ~/.vim/hydrafile.vim
 
 "set nolz
 silent autocmd UIEnter * nested
