@@ -34,10 +34,10 @@ set backspace=indent,eol,start
 
 "Make JJ act the same as Esc
 imap jj <Esc>
-imap !! ¡
-imap ?? ¿
-imap nyn ñ
-imap NYN Ñ
+"imap !! ¡
+"imap ?? ¿
+"imap nyn ñ
+"imap NYN Ñ
 
  "Move between buffers
 noremap <f3> :bprev<CR>

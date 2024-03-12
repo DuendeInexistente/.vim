@@ -243,12 +243,12 @@ Plug 'folke/which-key.nvim'
 Plug 'huiscool/vim-wpm'
 
 """"""""""""""""""""""""
-silent! Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
-vnoremap c :MakeCommentVisual<cr>
-nnoremap yc :MakeCommentNormal<cr>
-nnoremap <leader>dc :DeleteComment<cr>
-nnoremap K :GetComment<cr>
-nnoremap <leader>ec :EditComment<cr>
+"silent! Plug 'oxytocin/DocComments', { 'do': 'UpdateRemotePlugins' }
+"vnoremap c :MakeCommentVisual<cr>
+"nnoremap yc :MakeCommentNormal<cr>
+"nnoremap <leader>dc :DeleteComment<cr>
+"nnoremap K :GetComment<cr>
+"nnoremap <leader>ec :EditComment<cr>
 
 """"""""""""""""""""""""
 
